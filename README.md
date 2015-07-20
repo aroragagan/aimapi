@@ -13,7 +13,7 @@ Server uses the aimhistory.dll supplied by Invensys and NRG_aimapi_wrapper.dll f
 
 * NRG_aimapi_wrapper.dll:
 
-This is a wrapper dll for aimhistory.dll  and is written in c. The wrapper dll is needed because standard Windows ABI( win32 api) does not  accept more than 16 arguments in any of its exposed API functions but in case of Invensys AIM API there are functions which accept more than 16 arguments. Wrapper DLL is written  in C exposes two functions NRG_an_hist_values &  NRG_fh_RTPDef which in turn call the  an_hist_values and fh_RTPDef aim API functions respectively. This wrapper dll is used by the server program above to expose its functionality over the network using rpc and it has to be in the same directory as the server executable.
+This is a wrapper dll for aimhistory.dll  and is written in c. The wrapper dll is needed because standard Windows ABI( win32 api) does not  accept more than 16 arguments in any of its exposed API functions but in case of Invensys AIM API there are functions which accept more than 16 arguments. Wrapper DLL exposes two functions, NRG_an_hist_values &  NRG_fh_RTPDef which in turn call the  an_hist_values and fh_RTPDef aim API functions respectively. This wrapper dll is used by the server program above to expose its functionality over the network using rpc and it has to be in the same directory as the server executable.
 
 
 ## Client
