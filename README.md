@@ -38,3 +38,40 @@ hist4 =  192.168.1.4:51295
 hist5 =  192.168.1.5:51295
 hist6 =  192.168.1.6:51295
 </pre>
+
+#Usage
+<pre>
+Usage: aimapi-client.linux [global options] <verb> [verb options]
+
+Global options:
+        -n, --historian       historian name (*)
+        -h, --help            Show this help
+
+Verbs:
+    event-messages:
+        -s, --startTime       message start time in format 2015-01-31 15:04:00
+        -e, --endTime         message end time
+        -d, --daysFrom        messages since last n number of days
+        -o, --output          use abcdefgh for output in almhist.tcl format or use csv for output in csv format
+    opraction-alarms:
+        -s, --startTime       message start time in format 2015-01-31 15:04:00
+        -e, --endTime         message end time
+        -d, --daysFrom        messages since last n number of days
+    rdg-values:
+        -s, --startTime       start time to fetch values from
+        -e, --endTime         end time to fetch values upto
+        -g, --reductionGroup  name of reduction group
+        -p, --point           point name for which to fetch values
+        -c, --column          reduction operation either sum or avg
+    rtp-config:
+        -h, --help            Get RTP Config
+    rtp-values:
+        -s, --startTime       start time to fetch values from
+        -e, --endTime         end time to fetch values upto
+        -p, --point           point name for which to fetch values (*)
+        -d, --deadbandPercent deadband percent to consider a value has changed from the previous one
+        -f, --file            read the points from file. One point per line in the file
+        -D, --dateFromat      date format: 0. YYYY/MM/DD 1. unix time 2. DD-MON-YYYY 3. PI Backload format 4. unixtime englishtime value status
+        -l, --last            get the values from last N seconds ago
+        -v, --verbose         verbose displays the point name in output
+</pre>
