@@ -25,11 +25,11 @@ for running on a sparc machine
 
 The client is also written in golang-1.4.2 . The client uses a configuration file named client.ini which must be in the same directory as the aimapi-client executable. The format of the client.ini file is given below:
 
-<pre>#Format of the file is: historian = ipaddress:port. one historian per line</pre>
-
+<pre>#Format of the file is: historian = ipaddress:port. one historian per line
 hist1 =  192.168.1.1:51295
 hist2 =  192.168.1.2:51295
 hiht3 =  192.168.1.3:51295
 hist4 =  192.168.1.4:51295
 hist5 =  192.168.1.5:51295
 hist6 =  192.168.1.6:51295
+</pre>
