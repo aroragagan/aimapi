@@ -1,4 +1,4 @@
-# aimapi
+# AimAPI
 Invensys (Foxboro) aimapi server and client application. The purpose of this application is to query the invensys AIM * Historian for the historical and real time data.
 
 The application is written in golang-1.4.2 and consists of the following parts:
