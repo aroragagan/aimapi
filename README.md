@@ -18,19 +18,14 @@ This is a wrapper dll for aimhistory.dll  and is written in c. The wrapper dll i
 
 ## Client
 Implements the RPC client that invokes the procedures exposed by server program running on a remote machine and displays the result of the called procedure.
-*	Aimapi-client.sparc 
-
-For running on a sparc machine
-*	Aimapi-client.linux
-
-For running on a linux machine
-* Aimapi-client.exe
- 
-For windows
+*	Aimapi-client.sparc: For running on a sparc machine
+*	Aimapi-client.linux: For running on a linux machine
+* Aimapi-client.exe: For windows
 
 The client is also written in golang-1.4.2 . The client uses a configuration file named client.ini which must be in the same directory as the aimapi-client executable. The format of the client.ini file is given below:
 
 <pre>#Format of the file is: historian = ipaddress:port. one historian per line
+# Where ipaddress is the ip of the historian machine where server executable is running
 hist1 =  192.168.1.1:51295
 hist2 =  192.168.1.2:51295
 hiht3 =  192.168.1.3:51295
